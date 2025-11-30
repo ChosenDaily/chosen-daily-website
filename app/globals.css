@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --oxford-blue: #0B132B;
+    --midnight-purple: #1F1B58;
+    --moonlit-white: #EDEDED;
+    --radius: 0.5rem;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #0b132b, #0b1534, #0d173c, #111945, #161a4d, #2b295c, #3f396c, #52497c, #776f98, #9d97b4, #c4c1d0, #ededed);
+  min-height: 100vh;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(11,19,43,0.95) 0%, rgba(31,27,88,0.85) 100%);
+}
