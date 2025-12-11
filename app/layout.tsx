@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
-  title: "Chosen Daily - Transform Your Faith Journey",
-  description: "Experience scripture-powered journaling, AI-guided biblical insights, and authentic Christian community. Join 50,000+ believers growing deeper in faith.",
+  title: "Chosen Daily | Unlock Your Spiritual Potential & Lifespan in Faith",
+  description: "Christian journaling app with AI Bible insights, prayer circles, and multi-generational design. Transform your walk with God through daily reflection.",
+  keywords: ["Christian journaling", "Bible app", "AI scripture insights", "prayer app", "spiritual growth"],
   openGraph: {
     title: "Chosen Daily - Transform Your Faith Journey",
-    description: "Experience scripture-powered journaling, AI-guided biblical insights, and authentic Christian community.",
+    description: "One journal, deeper connection to God. Daily use linked to 2x deeper reflections.",
     type: "website",
     url: "https://chosendaily.com",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Chosen Daily - Transform Your Faith Journey",
-    description: "Join 50,000+ believers transforming their faith through journaling, AI insights, and community.",
   },
 };
 
@@ -24,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
